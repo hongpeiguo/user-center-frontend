@@ -1,5 +1,5 @@
 {
-  "name": "user-center-vue",
+  "name": "user-center-frontend-vue",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,14 +9,13 @@
   },
   "dependencies": {
     "ant-design-vue": "^4.2.6",
-    "axios": "^1.13.2",
+    "axios": "^1.7.7",
     "core-js": "^3.8.3",
-    "pinia": "^3.0.4",
+    "pinia": "^2.2.6",
     "vue": "^3.2.13",
     "vue-router": "^4.0.3"
   },
   "devDependencies": {
-    "@types/vue-router": "^2.0.0",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",

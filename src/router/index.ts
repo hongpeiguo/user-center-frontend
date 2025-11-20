@@ -1,5 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import HomePage from "@/pages/HomePage.vue";
+import UserLoginPage from "@/pages/user/UserLoginPage.vue";
+import { userRegister } from "@/api/user";
+import UserRegisterPage from "@/pages/user/UserRegisterPage.vue";
+import UserManagePage from "@/pages/admin/UserManagePage.vue";
 
 type RouteRecordRaw = typeof RouteRecordRaw;
 
@@ -7,25 +12,24 @@ const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
     name: "home",
-    component: HomeView,
+    component: HomePage,
   },
   {
     path: "/user/login",
     name: "userLogin",
-    component: HomeView,
+    component: UserLoginPage,
   },
   {
     path: "/user/register",
     name: "userRegister",
-    component: HomeView,
+    component: UserRegisterPage,
   },
   {
     path: "/admin/userManage",
     name: "adminUserManage",
-    component: HomeView,
+    component: UserManagePage,
   },
 ];
-
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
